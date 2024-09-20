@@ -2,7 +2,7 @@
 
 br>
 
-<img src="image3.jpg" alt="Image description" width="1200" height="1000">
+<img src="C:\Users\Hp\Desktop\HOUSE_PREDICTION_APP\static\image3.jpg" alt="Image description" width="1200" height="1000">
 
 <br>
 
