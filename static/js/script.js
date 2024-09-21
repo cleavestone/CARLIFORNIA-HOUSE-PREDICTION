@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
+        console.log('Submitting data:', data);
+
         fetch('/predict', {
             method: 'POST',
             headers: {
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
+            console.log('Received data:', data);
             predictedValueP.textContent = `$${data.prediction.toFixed(2)}`;
             resultDiv.classList.remove('hidden');
         })
